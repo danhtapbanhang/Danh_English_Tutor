@@ -781,7 +781,7 @@
       mcqTimer = setTimeout(() => {
         mcqIdx = (mcqIdx + 1) % colorsData.length;
         loadMcqQuestion();
-      }, 3000);
+      }, 1000);
     } else {
       btn.classList.add('wrong');
       allBtns.forEach(b => {
@@ -836,7 +836,7 @@
       spellingTimer = setTimeout(() => {
         spellingIdx = (spellingIdx + 1) % colorsData.length;
         loadSpellingQuestion();
-      }, 3000);
+      }, 1000);
     } else {
       inputEl.style.borderColor = '#E53E3E';
       setTimeout(() => {
@@ -846,5 +846,7 @@
   }
 </script>
 
+<contact-danh></contact-danh>
+    <script src="../../components.js"></script>
 </body>
 </html>
